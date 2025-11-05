@@ -1,0 +1,65 @@
+:root {
+  --font-header: "Roboto", sans-serif;
+  --bg-header: #d93a10;
+}
+
+/* ======common======= */
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+/* ====header==== */
+.container-fluid .row.header {
+  height: 30px;
+  background-color: var(--bg-header);
+  font-family: var(--font-header);
+}
+
+/* ====nav==== */
+.nav {
+  height: 100px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.nav .logo {
+  margin-left: 30px;
+  height: 100%;
+  font-family: "Oswald", sans-serif;
+}
+
+.nav .icon {
+  margin-right: 25px;
+  height: 100%;
+}
+
+.nav .nav-content {
+  gap: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav .nav-content p.desc:first-child {
+  color: var(--bg-header);
+}
+
+.nav .nav-content p:hover {
+  color: var(--bg-header);
+}
+
+/* cursor */
+.nav .logo p,
+.nav .nav-content,
+.nav .icon {
+  cursor: pointer;
+}
+
+/* sticky navbar */
+.nav.sticky-top {
+  background-color: white;
+  top: 0;
+  z-index: 1020;
+}
