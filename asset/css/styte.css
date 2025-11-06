@@ -1,6 +1,9 @@
 :root {
   --font-header: "Roboto", sans-serif;
+  --font-main-content: "Oswald", sans-serif;
+  --font-paragraph: "Open Sans", sans-serif;
   --bg-header: #d93a10;
+  --bg-main-menu: rgb(250, 250, 250);
 }
 
 /* ======common======= */
@@ -8,6 +11,11 @@ p {
   margin: 0;
   line-height: 1;
 }
+
+/* html,
+body {
+  overflow-x: hidden;
+} */
 
 /* ====header==== */
 .container-fluid .row.header {
@@ -17,49 +25,124 @@ p {
 }
 
 /* ====nav==== */
-.nav {
+.navbar-custom {
   height: 100px;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.nav .logo {
+.navbar-custom .logo {
   margin-left: 30px;
   height: 100%;
   font-family: "Oswald", sans-serif;
 }
 
-.nav .icon {
+.navbar-custom .icon {
   margin-right: 25px;
   height: 100%;
 }
 
-.nav .nav-content {
+.navbar-custom .nav-content {
   gap: 50px;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-.nav .nav-content p.desc:first-child {
+.navbar-custom .nav-content p.desc:first-child {
   color: var(--bg-header);
 }
 
-.nav .nav-content p:hover {
+.navbar-custom .nav-content p:hover {
   color: var(--bg-header);
 }
 
 /* cursor */
-.nav .logo p,
-.nav .nav-content,
-.nav .icon {
+.navbar-custom .logo p,
+.navbar-custom .nav-content,
+.navbar-custom .icon {
   cursor: pointer;
 }
 
 /* sticky navbar */
-.nav.sticky-top {
+.navbar-custom.sticky-top {
   background-color: white;
   top: 0;
   z-index: 1020;
+}
+
+/* position cho shoppping */
+.icon span.position-absolute {
+  width: 22px;
+  height: 22px;
+  top: -14px;
+  right: -9px;
+  font-size: 13px;
+  background-color: red;
+  color: white;
+  font-weight: 100;
+  border: 1px solid white;
+}
+
+/* img - content */
+.container-fluid .img-content {
+  width: 100%;
+  height: 560px;
+  max-height: 560px;
+  background-size: cover;
+  /* padding-bottom: 40px; */
+}
+
+/* =====main====== */
+.container-fluid .text-header .text-center {
+  color: var(--bg-header);
+  padding: 60px 0 20px;
+}
+
+.container-fluid .main-header p.h1 {
+  font-family: var(--font-main-content);
+  padding-bottom: 13px;
+}
+
+/* main-content */
+.container-fluid .row.main-content {
+  /* height: 640px;
+  max-height: 640px; */
+  padding: 42px 0 80px;
+  gap: 40px;
+}
+
+/* icon */
+.main-content .main .main-icon .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.main .text-main-content p.h4 {
+  font-family: var(--font-main-content);
+  margin-bottom: 13px;
+  padding-bottom: 0;
+}
+
+.main .text-main-content p.desc {
+  font-family: var(--font-paragraph);
+  padding-bottom: 16px;
+  font-size: 14px !important;
+}
+
+.main-content .main.d-flex {
+  gap: 20px;
+  height: 160px;
+  width: 350px;
+}
+
+/* main menu */
+.container-fluid .header-main-menu,
+.container-fluid .main-menu {
+  background-color: var(--bg-main-menu);
+}
+
+.container-fluid .main-menu {
+  padding-top: 50px;
 }

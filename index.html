@@ -90,7 +90,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap"
       rel="stylesheet"
     />
 
@@ -107,10 +107,10 @@
     <link rel="stylesheet" href="./asset/css/styte.css" />
     <title>CafeVin</title>
   </head>
-  <body style="height: 10000px">
+  <body class="m-0 p-0" style="height: 10000px">
     <div class="container-fluid">
       <div class="row header d-flex align-content-center">
-        <marquee behavior="scroll" direction="left">
+        <marquee class="p-0 m-0" behavior="scroll" direction="left">
           <span class="d-inline-block text-white" style="margin-right: 500px">
             Khuyến mãi khủng giảm tới <strong>35%</strong> cho tất cả sản phẩm
             của CafeVin
@@ -119,7 +119,7 @@
             Miễn phí vận chuyển với đơn hàng trên <strong>500k</strong>
           </span>
           <span class="d-inline-block text-white"
-            >SALE hot chào lương về - Freeship đơn 0đ</span
+            >SALE hot chào lương về - Freeship đơn <strong>0đ</strong></span
           >
         </marquee>
       </div>
@@ -127,7 +127,7 @@
 
     <!-- nav -->
     <div
-      class="d-flex sticky-top nav align-items-center justify-content-between"
+      class="d-flex sticky-top navbar-custom align-items-center justify-content-between"
     >
       <div class="logo d-flex align-items-center">
         <p class="fw-bold fs-1">CAFEVIN</p>
@@ -148,22 +148,287 @@
         <i class="fa-solid fa-cart-shopping position-relative">
           <span
             class="position-absolute d-flex justify-content-center align-items-center rounded-circle"
-            style="
-              width: 22px;
-              height: 22px;
-              top: -14px;
-              right: -9px;
-              font-size: 13px;
-              background-color: red;
-              color: white;
-              font-weight: 100;
-            "
             >+99</span
           >
         </i>
         <i class="fa-solid fa-user"></i>
       </div>
     </div>
+
+    <!-- main -->
+    <div class="container-fluid p-0 m-0">
+      <!-- img -->
+      <img
+        src="./asset/img/content/home_slider_img_4.jpg"
+        alt="ảnh cà phê"
+        class="img-content me-0 pe-0"
+      />
+
+      <!-- text header main -->
+      <div class="text-header">
+        <p class="text-center fs-5">CoffeeVin</p>
+      </div>
+      <div class="main-header">
+        <p class="h1 fs-1 mb-0 text-center">XIN CHÀO! COFFEE LOVER</p>
+      </div>
+
+      <!-- main content -->
+      <div class="row main-content g-0">
+        <!-- left-content -->
+        <div class="col p-0 d-flex justify-content-end">
+          <!-- hàng 1 -->
+          <div>
+            <div class="main d-flex">
+              <div class="text-main-content">
+                <p class="h4 text-end">NGUYÊN LIỆU CHẤT LƯỢNG</p>
+                <p class="desc lh-base fs-6 text-end">
+                  Sản xuất cà phê nguyên liệu tại nông trại chuyên cà phê chất
+                  lượng cao ở các vùng trồng cà phê nổi tiếng: CưM'gar - Đăk
+                  Lăk, Nam Yang - Gia Lai, Cầu Đất - Lâm Đồng.
+                </p>
+              </div>
+              <!-- icon -->
+              <div class="main-icon d-flex align-items-center">
+                <img
+                  src="./asset/img/icon/nguyen_lieu_chat_luong.png"
+                  alt="Nguyên Liệu Chất Lượng"
+                  class="icon"
+                />
+              </div>
+            </div>
+
+            <!-- hàng 2 -->
+            <div class="main d-flex">
+              <div class="text-main-content">
+                <p class="h4 text-end">KHÔNG NẤM MỐC</p>
+                <p class="desc lh-base fs-6 text-end">
+                  100% hạt cà phê nguyên liệu loại bỏ hạt sâu, xốp, mọt, mẻ, tạp
+                  chất trước khi rang. Đem lại sự an toàn tuyệt đối.
+                </p>
+              </div>
+              <!-- icon -->
+              <div class="main-icon d-flex align-items-center">
+                <img
+                  src="./asset/img/icon/khong_nam_moc.png"
+                  alt="Không Nấm Mốc"
+                  class="icon"
+                />
+              </div>
+            </div>
+
+            <!-- hàng 3 -->
+            <div class="main d-flex">
+              <div class="text-main-content">
+                <p class="h4 text-end">HƯƠNG VỊ ĐẶC TRƯNG</p>
+                <p class="desc lh-base fs-6 text-end">
+                  Áp dụng đa dạng phương pháp sơ chế theo quy trình cà phê đặc
+                  sản SCA, tạo nên hương vị đặc trưng, đa dạng.
+                </p>
+              </div>
+              <!-- icon -->
+              <div class="main-icon d-flex align-items-center">
+                <img
+                  src="./asset/img/icon/huong_vi_dac_trung.png"
+                  alt="Hương Vị Đặc Trưng"
+                  class="icon"
+                />
+              </div>
+            </div>
+
+            <!-- hàng 4 -->
+            <div class="main d-flex">
+              <div class="text-main-content">
+                <p class="h4 text-end">MORNING COFFEE</p>
+                <p class="desc lh-base fs-6 text-end">
+                  Bắt đầu ngày mới thoải mái và ấm cúng để nhâm nhi một tách cà
+                  phê. Đem lại sự tỉnh táo và sảng khoái cho một ngày dài làm
+                  việc.
+                </p>
+              </div>
+              <!-- icon -->
+              <div class="main-icon d-flex align-items-center">
+                <img
+                  src="./asset/img/icon/morning-coffee.png"
+                  alt="Morning Coffee"
+                  class="icon"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- center-image -->
+        <div class="col d-flex justify-content-center align-items-center p-0">
+          <img
+            src="./asset/img/content/image_main_content.jpg"
+            alt="CoffeeVin"
+            class="center-img"
+          />
+        </div>
+
+        <!-- right-content -->
+        <div class="col p-0">
+          <!-- hàng 1 -->
+          <div class="main d-flex">
+            <!-- icon -->
+            <div class="main-icon d-flex align-items-center">
+              <img
+                src="./asset/img/icon/ti_le_trai_chin.png"
+                alt="Tỉ Lệ Trái Chín"
+                class="icon"
+              />
+            </div>
+            <div class="text-main-content">
+              <p class="h4 text-start">TỶ LỆ TRÁI CHÍN ĐẠT 90%</p>
+              <p class="desc lh-base fs-6 text-start">
+                Tiêu chuẩn bắt buộc để sản xuất nên một ly cà phê chất lượng
+                cao.
+              </p>
+            </div>
+          </div>
+
+          <!-- hàng 2 -->
+          <div class="main d-flex">
+            <!-- icon -->
+            <div class="main-icon d-flex align-items-center">
+              <img
+                src="./asset/img/icon/may_rang_ca_phe.png"
+                alt="Máy Rang Công Nghệ"
+                class="icon"
+              />
+            </div>
+            <div class="text-main-content">
+              <p class="h4 text-start">MÁY RANG CÔNG NGHỆ</p>
+              <p class="desc lh-base fs-6 text-start">
+                Công nghệ Hot-air Kiểm soát đồng đều từng mẻ rang, không cháy
+                khét, không ám khói.
+              </p>
+            </div>
+          </div>
+
+          <!-- hàng 3 -->
+          <div class="main d-flex">
+            <!-- icon -->
+            <div class="main-icon d-flex align-items-center">
+              <img
+                src="./asset/img/icon/thuc_pham_tuoi_moi.png"
+                alt="Sản Phẩm Luôn Tươi Mới"
+                class="icon"
+              />
+            </div>
+            <div class="text-main-content">
+              <p class="h4 text-start">SẢN PHẨM LUÔN MỚI</p>
+              <p class="desc lh-base fs-6 text-start">
+                Ngày rang luôn dưới 10 ngày. 100% xay mới mỗi ngày. Trải nghiệm
+                cà phê tươi mới nhất.
+              </p>
+            </div>
+          </div>
+
+          <!-- hàng 4 -->
+          <div class="main d-flex">
+            <!-- icon -->
+            <div class="main-icon d-flex align-items-center">
+              <img
+                src="./asset/img/icon/uong_chat_song_khoe.png"
+                alt="Uống Chất Sống Khỏe"
+                class="icon"
+              />
+            </div>
+            <div class="text-main-content">
+              <p class="h4 text-start">UỐNG CHẤT, SỐNG KHỎE</p>
+              <p class="desc lh-base fs-6 text-start">
+                Cà phê chất lượng cao, mang lại trải nghiệm đáng giá trên từng
+                giọt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- text header main menu -->
+      <div class="header-main-menu">
+        <div class="text-header">
+          <p class="text-center fs-5">Menu đặc trưng</p>
+        </div>
+        <div class="main-header">
+          <p class="h1 fs-1 mb-0 text-center">ƯA THÍCH TẠI COFFEEVIN</p>
+        </div>
+      </div>
+
+      <!-- main menu -->
+      <div class="row main-menu g-0">
+        <!-- hàng 1 -->
+        <div class="row">
+          <!-- left -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+
+          <!-- right -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+        </div>
+
+        <!-- hàng 2 -->
+        <div class="row">
+          <!-- left -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+
+          <!-- right -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+        </div>
+
+        <!-- hàng 3 -->
+        <div class="row">
+          <!-- left -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+
+          <!-- right -->
+          <div class="col">
+            <img src="" alt="" class="img-coffee" />
+            <div class="desc-center">
+              <p class="h4"></p>
+              <p class="desc"></p>
+            </div>
+            <p class="price"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
