@@ -94,6 +94,13 @@ body {
   /* padding-bottom: 40px; */
 }
 
+.navbar-custom .icon i {
+  transition: color 0.2s ease;
+}
+.navbar-custom .icon i:hover {
+  color: var(--bg-header);
+}
+
 /* =====main====== */
 .container-fluid .text-header .text-center {
   color: var(--bg-header);
@@ -144,5 +151,89 @@ body {
 }
 
 .container-fluid .main-menu {
-  padding-top: 50px;
+  /* padding-top: 50px; */
+  padding: 50px 0 80px 0;
+  row-gap: 30px;
+}
+
+.row-content .desc-center p.h4 {
+  font-size: 20px;
+  font-family: var(--font-main-content);
+}
+
+.row-content .desc-center p.desc {
+  font-size: 14px;
+  font-family: var(--font-paragraph);
+}
+
+/* wh cho 6 items */
+.main-menu .row.row-content .col {
+  /* width: 615px; */
+  height: 125px;
+  /* padding: 0 15px; */
+  margin: 0 15px;
+  border: 0.8px solid #eeeeee;
+}
+
+.main-menu .row .col .desc-center {
+  box-sizing: content-box;
+  width: 352px;
+  height: 77px;
+  padding: 0 15px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row-content .col.d-flex .wd-desc {
+  width: 510px;
+  height: 86px;
+}
+
+.row-content .col.d-flex .wd-desc .border-height {
+  border: none;
+  width: 1px;
+  height: 50px;
+  background: #eeeeee;
+}
+
+.row-content .col.d-flex .wd-desc .price {
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--bg-header);
+  font-family: var(--font-paragraph);
+  font-weight: 600;
+}
+
+.row-content .col.d-flex .wd-desc .price-discount {
+  padding-left: 20px;
+  font-size: 15px;
+  font-family: var(--font-paragraph);
+  font-weight: 600;
+}
+
+.row-content:nth-of-type(2) {
+  margin: 30px 0;
+}
+
+.main-menu .row .col .img-coffee {
+  width: 85px;
+  height: 85px;
+}
+
+.main-menu .row .col {
+  transition: box-shadow 0.3s ease;
+}
+
+.main-menu .row .col:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+
+.desc-center .h4 {
+  transition: color 0.3s ease;
+}
+
+.desc-center .h4:hover {
+  color: var(--bg-header);
 }
